@@ -1,0 +1,6 @@
+@PhoneChecker_HostAddress = http://localhost:5024
+
+GET {{PhoneChecker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

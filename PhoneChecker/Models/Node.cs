@@ -3,7 +3,7 @@
     // Узел бинарного дерева
     public class Node
     {
-        public readonly string Phone;
+        public string Phone { get; set; }
 
         public Node Left { get;set; }
 

@@ -106,7 +106,7 @@ namespace PhoneChecker.Repositories
             }
         }
 
-        public void SaveTreeToFile()
+        private void SaveTreeToFile()
         {
             lock (_lock)
             {

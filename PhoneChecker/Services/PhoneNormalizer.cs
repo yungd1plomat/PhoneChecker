@@ -25,6 +25,11 @@ namespace PhoneChecker.Services
                 // Добавляем код страны
                 normalizedPhone = normalizedPhone.Insert(0, "7");
             }
+            // Если телефон начинается с +8, заменяем на +7
+            if (normalizedPhone[0] == '8')
+            {
+                normalizedPhone = "7" + normalizedPhone.Substring(1);
+            }
             // Если номер телефона не той длины кидаем ошибку
             if (normalizedPhone.Length != PHONE_PREFIX_LEN)
             {
